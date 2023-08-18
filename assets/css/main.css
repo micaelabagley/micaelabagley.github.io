@@ -4108,3 +4108,133 @@ input, select, textarea {
 		}
 
 	}
+
+
+/* ------------ */
+/* Landing Page */
+/* ------------ */
+/* Inspired by Taylor Hutchison */
+/* https://github.com/aibhleog/aibhleog.github.io */
+
+    .absoluteCenter {
+        /* Must manually set width/height (originally 800,500) */
+        width:100em;
+        height:32em;
+
+        /* The magic centering code */
+        margin:auto;
+        position:absolute;
+        top:0;bottom:5em; /* Aligns Vertically - Remove for Horizontal Only */
+        left:0;right:0; /* Aligns Horizontally - Remove for Vertical Only  */
+
+        /* Prevent div from overflowing main window */
+        max-width:100%;
+        max-height:100%;
+        overflow:auto;
+    }
+
+    /* IE 7 and Below */
+    :first-child+html .absoluteCenter,
+    * html .absoluteCenter {
+    /* Place code here to override all above values, and add IE friendly centering */
+    }
+
+
+    #landingWrapper {
+        background-color: #353849;
+        text-align: center;
+        padding-bottom: 0.1em;
+    }
+    
+    #landingWrapper .inner {
+        width: 5em;
+        margin: auto;
+        text-align: center;
+    }
+
+
+    .landingButton {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        background-color: transparent;
+        border: 0;
+        box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
+        color: #fff !important;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Raleway, Helvetica, sans-serif;
+        font-size: 0.8em;
+        font-weight: 700;
+        height: 3.75em;
+        letter-spacing: 0.1em;
+        line-height: 3.75em;
+        padding: 0 2.25em;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+		landingButton:hover,
+		.landingButton:hover {
+			background-color: rgba(255, 255, 255, 0.025);
+		}
+
+		landingButton:active,
+		.landingButton:active {
+			background-color: rgba(255, 255, 255, 0.075);
+		}
+
+		landingButton.icon:before,
+		.landingButton.icon:before {
+			margin-right: 0.5em;
+			color: rgba(255, 255, 255, 0.35);
+		}
+
+		landingButton.primary,
+		.landingButton.primary {
+			background-color: #f2a004;
+            color: #353849 !important;
+			box-shadow: none;
+		}
+
+			landingButton.primary:hover,
+			.landingButton.primary:hover {
+				background-color: rgba(242, 160, 4, 0.75);
+			}
+
+			landingButton.primary:active,
+			.landingButton.primary:active {
+				background-color: rgba(242, 160, 4, 0.5);
+			}
+
+			landingButton.primary.icon:before,
+			.landingButton.primary.icon:before {
+				color: #7985b0;
+			}
+
+		landingButton.fit,
+		.landingButton.fit {
+			width: 100%;
+		}
+
+		landingButton.disabled,
+		landingButton:disabled,
+		.landingButton.disabled,
+		.landingButton:disabled {
+			opacity: 0.25;
+		}
+
+		@media screen and (max-width: 480px) {
+
+			landingButton,
+			.landingButton {
+				padding: 0;
+			}
+
+		}
+
+/* Features */
+
